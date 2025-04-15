@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSA Virtual Assistant - HTML Certification</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo-title">
+                <img src="assets/pictures/me.png" alt="PSA Virtual Assistant" class="logo">
+                <h1>PSA Virtual Assistant</h1>
+            </div>
+            <div class="progress hidden" id="progress-container">
+                Question <span id="current-question">1</span> of <span id="total-questions">25</span>
+            </div>
+        </header>
+
+        <main>
+            <div id="intro-screen">
+                <div class="intro-content">
+                    <h2>HTML Certification Exam</h2>
+                    <p>This assessment evaluates your knowledge of HTML fundamentals and best practices.</p>
+                    
+                    <div class="instructions">
+                        <h3>Exam Guidelines:</h3>
+                        <ul>
+                            <li>25 multiple-choice questions</li>
+                            <li>Single attempt per question</li>
+                            <li>No time limit</li>
+                            <li>Passing score: 18/25 (70%)</li>
+                        </ul>
+                    </div>
+                    
+                    <button id="start-btn" class="btn-primary">
+                        Begin Examination <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="quiz-content" class="hidden">
+                <div id="question-container">
+                    <h2 id="question-text">Question will appear here</h2>
+                    <div id="options-container" class="options-grid"></div>
+                </div>
+                <div class="navigation">
+                    <button id="next-btn" class="btn-primary">
+                        Next Question <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="results-container" class="hidden">
+                <div class="results-card">
+                    <h2>Examination Complete</h2>
+                    <div class="score-display">
+                        <p>Your Final Score:</p>
+                        <h3><span id="score">0</span>/25</h3>
+                        <p id="score-message">Keep practicing!</p>
+                    </div>
+                    <button id="restart-btn" class="btn-primary">
+                        <i class="fas fa-redo"></i> Retake Exam
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 PSA Virtual Assistant. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
